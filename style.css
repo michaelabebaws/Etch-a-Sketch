@@ -1,26 +1,24 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 #container {
     display: flex;
-    flex-wrap: wrap;  /* Allows multiple rows */
-    justify-content: center; 
-    width: 500px; /* Set a fixed width */
-    margin-top: 10vh;
+    flex-wrap: wrap;  
+    width: 960px;
+    height: 960px; 
+    margin: 40px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 .grid-square {
-    width: 5.5%;  /* 4 squares per row (100% / 4 = 25%) */
-    aspect-ratio: 1; /* Makes squares equal height and width */
+    aspect-ratio: 1; 
     background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 1px solid black;
     font-weight: bold;
-    transition: background-color 0.3s;
-
+    transition: background-color 0.2s;
 }
 
 .hovered {
@@ -29,7 +27,6 @@
 
 body {
     background-color: blanchedalmond;
-
 }
 
  #section {
@@ -43,14 +40,34 @@ body {
  }
 
  #reset {
-    margin-top: 50px;
+    min-width: 130px;
+    height: 50px;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px;
+    background-color: gold;
+    border-color: gold;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: rgb(1, 87, 1);
+}
+
+#customgrid {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+ #generategrid {
     width: 130px;
     height: 50px;
     font-weight: bold;
     font-size: medium;
     border-radius: 3px;
-    background-color: gold;
-    border-color: gold;
+    background-color: darkslategray;
+    border-color: rgba(47, 79, 79, 0.3);
     font-family: sans-serif;
-    color: rgb(1, 87, 1);
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top: 20px;
 }
